@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="retry">Retry</string>
+    <string name="error_message">An error occurred. Please retry.</string>
+    <string name="room_image">Room Image</string>
+    <string name="book">Book!</string>
+    <string name="already_booked">Booked!</string>
+    <string name="spots_remaining">%s spots remaining</string>
+    <string name="view_details"><u>Tap image for details</u></string>
+    <string name="loading_rooms">Finding rooms for you..</string>
+    <string name="welcome_message">Welcome to Room Finder!</string>
+</resources>

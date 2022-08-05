@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="error_margin">12dp</dimen>
+    <dimen name="image_radius">15dp</dimen>
+    <dimen name="image_size">64dp</dimen>
+    <dimen name="list_item_margin">4dp</dimen>
+    <dimen name="image_margin">6dp</dimen>
+    <dimen name="text_margin">8dp</dimen>
+    <dimen name="subheading">16sp</dimen>
+    <dimen name="small_text">10sp</dimen>
+    <dimen name="label_margin">4dp</dimen>
+    <dimen name="action_button_margin_h">24dp</dimen>
+    <dimen name="action_button_margin_v">12dp</dimen>
+</resources>

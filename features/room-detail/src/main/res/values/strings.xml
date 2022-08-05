@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="retry">Retry</string>
+    <string name="error_message">An error occurred. Please retry.</string>
+    <string name="room_image">Room Image</string>
+    <string name="book">Book!</string>
+    <string name="spots_remaining">%s spots remaining</string>
+    <string name="view_details"><u>View Details</u></string>
+    <string name="loading_rooms">Finding rooms for you..</string>
+    <string name="long_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis cursus ex, eget interdum nisi hendrerit ac. Suspendisse condimentum augue et pharetra condimentum. Fusce sapien turpis, facilisis vel nibh eget, sodales vestibulum est. Suspendisse lacinia dolor orci, egestas blandit metus lacinia ut. Duis vel nulla lacus. Sed tincidunt tempus pulvinar. Quisque accumsan dignissim nisl, at aliquet eros iaculis vel. Maecenas in arcu nec diam tempus euismod. Ut in lacus dapibus, placerat tellus at, imperdiet elit. Ut imperdiet lacinia lobortis. </string>
+</resources>

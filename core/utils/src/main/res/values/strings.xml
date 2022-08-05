@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="authorization_error">Authorization failed</string>
+    <string name="no_internet">Unable to connect to internet</string>
+    <string name="server_error">Error occurred on server</string>
+    <string name="time_out">Request timed out</string>
+    <string name="unknown_error">An unknown error occurred</string>
+    <string name="unknown_host">Unable to connect to server</string>
+</resources>

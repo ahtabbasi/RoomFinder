@@ -10,7 +10,7 @@ internal object RoomMapper {
     fun toDomainModel(remote: RoomDTO, isBooked: Boolean) = Room(
         name = remote.name,
         spots = remote.spots,
-        thumbnail = remote.thumbnail,
+        photo = remote.thumbnail,
         isBooked = isBooked
     )
 }

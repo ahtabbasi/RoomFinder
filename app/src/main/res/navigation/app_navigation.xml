@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/list_navigation">
+
+    <include app:graph="@navigation/list_navigation" />
+    <include app:graph="@navigation/detail_navigation" />
+
+    <action
+        android:id="@+id/actionNavigateToRoomDetail"
+        app:destination="@id/detail_navigation"
+        app:enterAnim="@anim/slide_in_right">
+        <argument
+            android:name="roomDetail"
+            android:defaultValue="@null"
+            app:argType="com.ahtabbasi.roomdetail.RoomDetailUIModel"
+            app:nullable="true" />
+    </action>
+
+
+</navigation>

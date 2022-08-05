@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/roomRowItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/image_margin"
+    android:paddingBottom="@dimen/image_margin"
+    app:cardCornerRadius="@dimen/image_radius"
+    app:strokeColor="@color/image_stroke"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivRoomImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/room_image"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="H,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/placeholder_image" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_margin"
+            android:layout_marginTop="@dimen/label_margin"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tvSpots"
+            app:layout_constraintStart_toStartOf="@+id/ivRoomImage"
+            app:layout_constraintTop_toBottomOf="@+id/ivRoomImage"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="Cool Room" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvSpots"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/label_margin"
+            android:textColor="?colorPrimary"
+            android:textSize="@dimen/small_text"
+            app:layout_constraintStart_toStartOf="@+id/tvName"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            tools:text="5 spots remaining" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvViewDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/label_margin"
+            android:layout_marginBottom="@dimen/label_margin"
+            android:text="@string/long_description"
+            android:textSize="@dimen/small_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvName"
+            app:layout_constraintTop_toBottomOf="@+id/tvSpots" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

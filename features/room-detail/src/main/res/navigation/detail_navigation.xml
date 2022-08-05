@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_navigation"
+    app:startDestination="@id/roomDetailFragment">
+
+    <fragment
+        android:id="@+id/roomDetailFragment"
+        android:name="com.ahtabbasi.roomdetail.RoomDetailFragment"
+        android:label="Room Detail"
+        tools:layout="@layout/fragment_room_detail">
+        <argument
+            android:name="roomDetail"
+            android:defaultValue="@null"
+            app:argType="com.ahtabbasi.roomdetail.RoomDetailUIModel"
+            app:nullable="true" />
+    </fragment>
+
+</navigation>

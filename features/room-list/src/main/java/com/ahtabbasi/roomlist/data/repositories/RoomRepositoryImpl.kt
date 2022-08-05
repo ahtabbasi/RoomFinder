@@ -22,11 +22,11 @@ internal class RoomRepositoryImpl @Inject constructor(
         } else when (
             val rooms = remoteDataSource.getAllRooms()) {
             is NetworkResult.Failure -> GetAllRoomsResult.Error(rooms.error)
-            is NetworkResult.Success -> GetAllRoomsResult.Success(
-                rooms.data.rooms.map {
-                    RoomMapper.toDomainModel(it, false)
-                }
-            )
+            is NetworkResult.Success -> {
+                val result = rooms.data.rooms.map { RoomMapper.toDomainModel(it, false) }
+                localDataSource.saveRooms(result)
+                GetAllRoomsResult.Success(result)
+            }
         }
     }
 
