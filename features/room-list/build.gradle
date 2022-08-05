@@ -12,6 +12,7 @@ android {
     defaultConfig {
         minSdk 23
         targetSdk 32
+        buildConfigField "String", "BASE_URL", "\"$rootProject.BASE_URL\""
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
