@@ -21,7 +21,7 @@ internal class RoomListViewModel @Inject constructor(
     private val _viewState = MutableSharedFlow<RoomListViewState>(replay = 1)
     val viewState = _viewState.asSharedFlow()
 
-    private val _loading = MutableSharedFlow<Boolean>(replay = 0)
+    private val _loading = MutableSharedFlow<Boolean>(replay = 1)
     val loading = _loading.asSharedFlow()
 
     init {
