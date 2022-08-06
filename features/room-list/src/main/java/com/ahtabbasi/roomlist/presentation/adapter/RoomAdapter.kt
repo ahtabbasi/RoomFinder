@@ -42,11 +42,11 @@ internal class RoomAdapter(
 
             binding.tvName.text = room.name
             binding.tvSpots.text = spotsLeft
-            binding.bBook.isEnabled = !room.isBooked && room.spots != 0
-            if (binding.bBook.isEnabled) {
-                binding.bBook.text = binding.root.context.getString(R.string.book)
-            } else {
+            binding.bBook.isEnabled = !room.isBooked && room.spots > 0
+            if (room.isBooked) {
                 binding.bBook.text = binding.root.context.getString(R.string.already_booked)
+            } else {
+                binding.bBook.text = binding.root.context.getString(R.string.book)
             }
             binding.bBook.setOnClickListener {
                 viewModel1.bookRoom(room)
